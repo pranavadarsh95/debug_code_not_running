@@ -4,6 +4,8 @@ import javax.persistence.*;
 
 @Entity
 public class Book {
+	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
@@ -59,7 +61,11 @@ public class Book {
 	public void setIsbn(String isbn) {
 		this.isbn = isbn;
 	}
-
+    
+	public Book() {
+		
+	}
+	
 	public Book(String name) {
 		this.title = name;
 	}
